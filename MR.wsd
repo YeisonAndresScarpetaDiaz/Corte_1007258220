@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS vehiculos;
+
+CREATE DATABASE vehiculos;
+
+USE vehiculos;
+
+CREATE TABLE categoria(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    marca VARCHAR(50) NOT NULL,
+ 
+);
+
+CREATE TABLE autos(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    marca VARCHAR(50) NOT NULL,
+    modelo VARCHAR(50) NOT NULL,
+    año_fabricacion INT NOT NULL,
+    tipo_carroceria VARCHAR(50) NOT NULL
